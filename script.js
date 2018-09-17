@@ -20,21 +20,6 @@ function randomPalette(){
 	generateRules();
 }
 
-var rgbToHex = function (rgb) { 
-  var hex = Math.ceil(Number(rgb)).toString(16);
-  if (hex.length < 2) {
-       hex = "0" + hex;
-  }
-  return hex;
-};
-
-var fullColorHex = function(r,g,b) {   
-  var red = rgbToHex(r);
-  var green = rgbToHex(g);
-  var blue = rgbToHex(b);
-  return "#"+red+green+blue;
-};
-
 function clearPalette(){
 	document.getElementById("color1").style.backgroundColor = "hsl(0, 100%, 100%)";
 	document.getElementById("color2").style.backgroundColor = "hsl(0, 100%, 100%)";

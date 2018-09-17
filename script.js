@@ -6,11 +6,11 @@ var color5;
 var lightness;
 
 function randomPalette(){
-	color1 = Math.floor(Math.random() * 360);
-	color2 = Math.floor(Math.random() * 360);
-	color3 = Math.floor(Math.random() * 360);
-	color4 = Math.floor(Math.random() * 360);
-	color5 = Math.floor(Math.random() * 360);
+	color1 = Math.floor(Math.random() * 71);
+	color2 = color1 + 72;
+	color3 = color2 + 72;
+	color4 = color3 + 72;
+	color5 = color4 + 72;
 	lightness = 50;
 	document.getElementById("color1").style.backgroundColor = "hsl(" + color1 + ", 100%, " + lightness + "%)";
 	document.getElementById("color2").style.backgroundColor = "hsl(" + color2 + ", 100%, " + lightness + "%)";
